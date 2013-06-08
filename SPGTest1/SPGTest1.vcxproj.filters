@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Library">
+      <UniqueIdentifier>{3ce8e381-50cc-4189-a8be-23d212349a92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scripts">
+      <UniqueIdentifier>{a04f8822-0131-4d2e-b205-70b7e1c0f4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game1">
+      <UniqueIdentifier>{4d3bd76e-8ded-4dc9-a9b5-b1771af4848f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game2">
+      <UniqueIdentifier>{1c66d3cb-1a36-4787-8299-f1e0a8e245b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game1">
+      <UniqueIdentifier>{a1a34b77-89f3-40a6-b079-d8830345eaf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game2">
+      <UniqueIdentifier>{f10aa8d6-fb14-44f8-bb4b-79a89b60e6ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameHuiii">
+      <UniqueIdentifier>{00b0f8cd-3989-4391-9c42-7188017fd5a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameHuiii">
+      <UniqueIdentifier>{dcd27f00-8e4d-479f-816e-d99867816348}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game3D">
+      <UniqueIdentifier>{0d0999a1-f6bd-428f-ba13-d5dc440a768b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game3D">
+      <UniqueIdentifier>{ed9d793f-8cc1-4d15-b7c9-821711ecc14c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{af9d1f87-1412-4e2c-b696-f70289f83b31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Effect">
+      <UniqueIdentifier>{a45cc159-8922-4553-bfa6-8f5acd557950}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GamePS2D">
+      <UniqueIdentifier>{6ae555fa-76ea-4671-9ab3-5a0c537ae764}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GamePS2D">
+      <UniqueIdentifier>{f81e3f8b-ea96-42c3-bc85-3070d1db2357}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="SPGTest1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="a.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="dx5_logo.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="loading.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="logo_long_m_a.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="blank.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snowball.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="snowball.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="whiteSqure.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="login.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="menu.wav">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="test_include.ks">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="test_inner_include.ks">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="snowSmall.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="logo01.mpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="logo01.avi">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="zlibwapi.dll">
+      <Filter>Library</Filter>
+    </None>
+    <None Include="ReadMe.txt">
+      <Filter>Library</Filter>
+    </None>
+    <None Include="expat.dll">
+      <Filter>Library</Filter>
+    </None>
+    <None Include="sicily.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="test.ks">
+      <Filter>Scripts</Filter>
+    </None>
+    <None Include="ab.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="sos.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="testPS.txt">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="test_effect.txt">
+      <Filter>Effect</Filter>
+    </None>
+    <None Include="mix_mask.mm">
+      <Filter>Effect</Filter>
+    </None>
+    <None Include="mask_st_02.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="st_02.jpg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="menu.ogg">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SPGTest1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Game1.h">
+      <Filter>Header Files\Game1</Filter>
+    </ClInclude>
+    <ClInclude Include="Game2.h">
+      <Filter>Header Files\Game2</Filter>
+    </ClInclude>
+    <ClInclude Include="LogoScreen.h">
+      <Filter>Header Files\Game2</Filter>
+    </ClInclude>
+    <ClInclude Include="TestScreen.h">
+      <Filter>Header Files\Game2</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Huiii.h">
+      <Filter>Header Files\GameHuiii</Filter>
+    </ClInclude>
+    <ClInclude Include="Test.h">
+      <Filter>Header Files\GameHuiii</Filter>
+    </ClInclude>
+    <ClInclude Include="Game3D.h">
+      <Filter>Header Files\Game3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Test3D.h">
+      <Filter>Header Files\Game3D</Filter>
+    </ClInclude>
+    <ClInclude Include="textBox.h">
+      <Filter>Header Files\GameHuiii</Filter>
+    </ClInclude>
+    <ClInclude Include="GamePS2D.h">
+      <Filter>Header Files\GamePS2D</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SPGTest1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game1.cpp">
+      <Filter>Source Files\Game1</Filter>
+    </ClCompile>
+    <ClCompile Include="Game2.cpp">
+      <Filter>Source Files\Game2</Filter>
+    </ClCompile>
+    <ClCompile Include="LogoScreen.cpp">
+      <Filter>Source Files\Game2</Filter>
+    </ClCompile>
+    <ClCompile Include="GameTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestScreen.cpp">
+      <Filter>Source Files\Game2</Filter>
+    </ClCompile>
+    <ClCompile Include="Test.cpp">
+      <Filter>Source Files\GameHuiii</Filter>
+    </ClCompile>
+    <ClCompile Include="Huiii.cpp">
+      <Filter>Source Files\GameHuiii</Filter>
+    </ClCompile>
+    <ClCompile Include="Game3D.cpp">
+      <Filter>Source Files\Game3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Test3D.cpp">
+      <Filter>Source Files\Game3D</Filter>
+    </ClCompile>
+    <ClCompile Include="textBox.cpp">
+      <Filter>Source Files\GameHuiii</Filter>
+    </ClCompile>
+    <ClCompile Include="GamePS2D.cpp">
+      <Filter>Source Files\GamePS2D</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SPGTest1.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

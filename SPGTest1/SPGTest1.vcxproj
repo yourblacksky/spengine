@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{82EC60C8-6FB3-49BE-ABC9-537533DCB144}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SPGTest1</RootNamespace>
+    <SccProjectName>Svn</SccProjectName>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(VCInstallDir)bin;$(WindowsSdkDir)bin\NETFX 4.0 Tools;$(WindowsSdkDir)bin;$(VSInstallDir)Common7\Tools\bin;$(VSInstallDir)Common7\tools;$(VSInstallDir)Common7\ide;$(ProgramFiles)\HTML Help Workshop;$(FrameworkSDKDir)\bin;$(MSBuildToolsPath32);$(VSInstallDir);$(SystemRoot)\SysWow64;$(FxCopDir);$(PATH);$(DXSDK_DIR)Utilities\Bin\x86;.\dll</ExecutablePath>
+    <IncludePath>..\Antlr;..\DirectShow;..\KScript;..\SPEngine;$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(DXSDK_DIR)Include;..\SPAVG;..\SimpleXMLPersistence;.\zlib\include</IncludePath>
+    <LibraryPath>..\KScript\Debug;$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(DXSDK_DIR)Lib\x86;$(DXSDK_DIR)Lib\x64;..\SimpleXMLPersistence;..\zlib</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <ExecutablePath>$(DXSDK_DIR)Utilities\Bin\x86;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>..\Antlr;..\DirectShow;$(DXSDK_DIR)Include;..\KScript;..\SPEngine;..\SPAVG;$(IncludePath);..\SimpleXMLPersistence</IncludePath>
+    <LibraryPath>..\SimpleXMLPersistence;..\DirectShow\Release;$(DXSDK_DIR)Lib\x86;$(DXSDK_DIR)Lib\x64;$(LibraryPath);..\zlib</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalOptions>/MACHINE:X86 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="a.png" />
+    <None Include="ab.jpg" />
+    <None Include="blank.jpg" />
+    <None Include="dx5_logo.bmp" />
+    <None Include="expat.dll" />
+    <None Include="loading.png" />
+    <None Include="login.wav" />
+    <None Include="logo01.avi" />
+    <None Include="logo01.mpg" />
+    <None Include="logo_long_m_a.png" />
+    <None Include="mask_st_02.jpg" />
+    <None Include="menu.ogg" />
+    <None Include="menu.wav" />
+    <None Include="mix_mask.mm" />
+    <None Include="ReadMe.txt" />
+    <None Include="sicily.jpg" />
+    <None Include="small.ico" />
+    <None Include="snowball.bmp" />
+    <None Include="snowball.png" />
+    <None Include="snowSmall.png" />
+    <None Include="sos.jpg" />
+    <None Include="SPGTest1.ico" />
+    <None Include="st_02.jpg" />
+    <None Include="test.ks" />
+    <None Include="testPS.txt" />
+    <None Include="test_effect.txt" />
+    <None Include="test_include.ks" />
+    <None Include="test_inner_include.ks" />
+    <None Include="whiteSqure.bmp" />
+    <None Include="zlibwapi.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game1.h" />
+    <ClInclude Include="Game2.h" />
+    <ClInclude Include="Game3D.h" />
+    <ClInclude Include="GamePS2D.h" />
+    <ClInclude Include="GameTest.h" />
+    <ClInclude Include="Huiii.h" />
+    <ClInclude Include="LogoScreen.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SPGTest1.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Test.h" />
+    <ClInclude Include="Test3D.h" />
+    <ClInclude Include="TestScreen.h" />
+    <ClInclude Include="textBox.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Game1.cpp" />
+    <ClCompile Include="Game2.cpp" />
+    <ClCompile Include="Game3D.cpp" />
+    <ClCompile Include="GamePS2D.cpp" />
+    <ClCompile Include="GameTest.cpp" />
+    <ClCompile Include="Huiii.cpp" />
+    <ClCompile Include="LogoScreen.cpp" />
+    <ClCompile Include="SPGTest1.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Test.cpp" />
+    <ClCompile Include="Test3D.cpp" />
+    <ClCompile Include="TestScreen.cpp" />
+    <ClCompile Include="textBox.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SPGTest1.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Antlr\Antlr.vcxproj">
+      <Project>{df54f08f-442a-4d5b-9620-df52db3a3148}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\DirectShow\DirectShow.vcxproj">
+      <Project>{e63ad8c5-3fff-4be7-8798-3f87d3e1e8fb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\KScript\KScript.vcxproj">
+      <Project>{cf8c946e-f346-467e-bf72-116e26cabc01}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleXMLPersistence\SimpleXMLPersistence.vcxproj">
+      <Project>{d2fe6f40-ad61-424b-994b-4d7993551961}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SPEngine\SPEngine.vcxproj">
+      <Project>{7d08c877-ae72-4b95-84b5-7814950b1502}</Project>
+      <Private>true</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

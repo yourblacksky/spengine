@@ -1,0 +1,62 @@
+sampler tex : register(S0);
+
+texture Tex1;
+
+ 
+//////////////////////////////////////////////////////////////////////////
+
+// Default vertix shader for shader model 3.0
+
+float4x4 MatrixTransform;
+void SpriteVertexShader(
+	inout float4 vColor : COLOR0, 
+	inout float2 texCoord : TEXCOORD0,
+	inout float4 position : POSITION0)
+{
+    position = mul(position, MatrixTransform);
+}
+//////////////////////////////////////////////////////////////////////////
+
+sampler S1 = sampler_state
+{
+	Texture = (Tex1);
+	MinFilter = LINEAR;
+	MagFilter = LINEAR;
+	MipFilter = LINEAR;
+};
+
+float4 PS_Main(float4 color : COLOR, float2 texCoord : TEXCOORD0) : COLOR
+{
+	float4 tex_color = tex2D(tex, texCoord);//tex2D(tex, texCoord) * tex2D(S1, texCoord);
+	tex_color.a = 1 - tex_color.a;
+    return 1 - tex_color;
+}
+
+float4 PS_Main2(float4 color : COLOR, float2 texCoord : TEXCOORD0) : COLOR
+{
+	float4 tex_color = tex2D(tex, texCoord) * tex2D(S1, texCoord);
+    return tex_color;
+	return float4(1,0,0,1);
+}
+
+technique T0
+{
+	pass P0
+	{
+		PixelShader = compile ps_2_0 PS_Main();
+	}
+}
+
+technique T1
+{
+	pass P0
+	{
+		PixelShader = compile ps_2_0 PS_Main();
+	}
+
+	pass P1
+	{
+		VertexShader = compile vs_3_0  SpriteVertexShader();
+		PixelShader = compile ps_3_0 PS_Main2();
+	}
+}

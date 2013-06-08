@@ -1,0 +1,12 @@
+sampler tex  : register(S0);
+sampler tex2 : register(S1);
+float width  : register(C0);
+float height : register(C1);
+
+float4 Main(float4 color : COLOR, float2 texCoord : TEXCOORD0) : COLOR
+{
+	float a = width;
+	float b = height;
+    return tex2D(tex, texCoord) * tex2D(tex2, texCoord);
+	//return tex2D(tex, float2(((1 - texCoord.x) * width + 100) / width, ((1 - texCoord.y) * height + 100) / height)) + tex2D(tex2, texCoord);
+}
